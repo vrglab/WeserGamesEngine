@@ -83,7 +83,6 @@ void DirectXRenderer::RenderInit()
 
 void DirectXRenderer::Render()
 {
-    auto BATCH = MeshBatch::GetInstance().GetBatch();
 }
 
 void DirectXRenderer::RenderEnd()

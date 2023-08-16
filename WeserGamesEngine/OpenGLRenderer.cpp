@@ -26,8 +26,7 @@ void OpenGLRenderer::RenderInit()
 
 void OpenGLRenderer::Render()
 {
-   auto BATCH = MeshBatch::GetInstance().GetBatch();
-   
+   /*
    for (auto batchGroup = BATCH->begin(); batchGroup != BATCH->end(); ++batchGroup)
    {
        GLuint vao = (GLuint)batchGroup->first->GetVao();
@@ -49,7 +48,7 @@ void OpenGLRenderer::Render()
        glDisableVertexArrayAttrib(vao, 2);
        glBindVertexArray(0);
 
-   }
+   }*/
 }
 
 void OpenGLRenderer::RenderEnd()

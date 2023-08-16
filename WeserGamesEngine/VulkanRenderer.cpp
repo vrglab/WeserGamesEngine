@@ -259,7 +259,6 @@ void VulkanRenderer::RenderInit()
 
 void VulkanRenderer::Render()
 {
-    auto BATCH = MeshBatch::GetInstance().GetBatch();
 }
 
 void VulkanRenderer::RenderEnd()
