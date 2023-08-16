@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <WE_IncludePath>$(MSBuildStartupDirectory)\Includes</WE_IncludePath>
+    <WE_LibPath>$(MSBuildStartupDirectory)\Lib</WE_LibPath>
+    <WE_LibaryToInclude>assimp-vc143-mt.lib; ode_double.lib; OpenAL32.lib; vulkan-1.lib; glfw3.lib; OpenGL32.lib; glew32.lib;d3d11.lib; d3dcompiler.lib; dxgi.lib; dxguid.lib</WE_LibaryToInclude>
+    <WE_DllsToInclude>$(MSBuildStartupDirectory)\Dll Files</WE_DllsToInclude>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(WE_IncludePath);$(IncludePath)</IncludePath>
+    <LibraryPath>$(WE_LibPath);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(WE_LibaryToInclude);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(WE_LibaryToInclude);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="WE_IncludePath">
+      <Value>$(WE_IncludePath)</Value>
+    </BuildMacro>
+    <BuildMacro Include="WE_LibPath">
+      <Value>$(WE_LibPath)</Value>
+    </BuildMacro>
+    <BuildMacro Include="WE_LibaryToInclude">
+      <Value>$(WE_LibaryToInclude)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="WE_DllsToInclude">
+      <Value>$(WE_DllsToInclude)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
