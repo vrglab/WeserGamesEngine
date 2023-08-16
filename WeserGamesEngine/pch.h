@@ -16,6 +16,10 @@
 #endif
 #endif
 
+#ifndef AL_AL_H
+#include <AL/al.h>
+#endif
+
 #ifndef _FILESYSTEM_
 #include <filesystem>
 #endif
