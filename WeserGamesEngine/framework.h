@@ -1,5 +1,3 @@
-#pragma once
-
 //Utils
 #ifndef __UTILS__
 #include "Utils.h"

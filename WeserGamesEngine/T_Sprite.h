@@ -1,5 +1,4 @@
 #pragma once
-#include "pch.h"
 
 #ifndef __SPRITE__
 #define __SPRITE__

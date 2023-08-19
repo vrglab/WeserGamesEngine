@@ -117,9 +117,8 @@ using namespace std;
 #endif
 
 #ifndef STB_IMAGE_IM
-#define STB_IMAGE_IMPLEMENTATION
-#include <stb_image.h>
 #define STB_IMAGE_IM
+#include <stb_image.h>
 #endif
 
 #ifndef lua_h
@@ -135,7 +134,11 @@ using namespace luabridge;
 #endif
 
 extern "C" {
+#ifndef STB_VORBIS_C_INCLUDED
+#define STB_VORBIS_C_INCLUDED
+#define STB_VORBIS_HEADER_ONLY
 #include <stb_vorbis.c>
+#endif
 }
 
 // add headers that you want to pre-compile here
