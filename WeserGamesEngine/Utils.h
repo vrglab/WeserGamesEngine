@@ -1,5 +1,5 @@
 #pragma once
-#include "pch.h";
+#include "pch.h"
 
 #ifndef __UTILS__
 #define __UTILS__

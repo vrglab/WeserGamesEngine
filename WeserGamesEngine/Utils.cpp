@@ -2,7 +2,7 @@
 
 uint32_t Utils::findMemoryType(uint32_t typeFilter, VkMemoryPropertyFlags properties)
 {
-    VkPhysicalDeviceMemoryProperties memProperties;
+    /*VkPhysicalDeviceMemoryProperties memProperties;
     VkPhysicalDevice physicalDevice = ((VulkanRenderer*)Application::GetRenderer())->physicalDevice;
     vkGetPhysicalDeviceMemoryProperties(physicalDevice, &memProperties);
 
@@ -10,7 +10,7 @@ uint32_t Utils::findMemoryType(uint32_t typeFilter, VkMemoryPropertyFlags proper
         if ((typeFilter & (1 << i)) && (memProperties.memoryTypes[i].propertyFlags & properties) == properties) {
             return i;
         }
-    }
+    }*/
 
     // Handle memory type not found error
     return UINT32_MAX;

@@ -104,6 +104,24 @@ using namespace std;
 #include <spirv_cross/spirv_cross.hpp>
 #endif
 
+#ifndef __d3d11_h__
+#include <d3d11.h>
+#ifndef __d3d12_h__
+#include <d3d12.h>
+#endif
+#include <d3dcompiler.h>
+#include <dxgi1_6.h>
+#pragma comment(lib, "d3d11.lib")
+#pragma comment(lib, "D3DCompiler.lib")
+#pragma comment(lib, "dxgi.lib")
+#endif
+
+#ifndef STB_IMAGE_IM
+#define STB_IMAGE_IMPLEMENTATION
+#include <stb_image.h>
+#define STB_IMAGE_IM
+#endif
+
 #ifndef lua_h
 #include <lua.hpp>
 
@@ -119,18 +137,6 @@ using namespace luabridge;
 extern "C" {
 #include <stb_vorbis.c>
 }
-
-#ifndef __d3d11_h__
-#include <d3d11.h>
-#ifndef __d3d12_h__
-#include <d3d12.h>
-#endif
-#include <d3dcompiler.h>
-#include <dxgi1_6.h>
-#pragma comment(lib, "d3d11.lib")
-#pragma comment(lib, "D3DCompiler.lib")
-#pragma comment(lib, "dxgi.lib")
-#endif
 
 // add headers that you want to pre-compile here
 #include "framework.h"

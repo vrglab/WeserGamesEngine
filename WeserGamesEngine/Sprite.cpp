@@ -1,11 +1,5 @@
 #include "pch.h"
 
-#ifndef STB_IMAGE_IM
-#define STB_IMAGE_IMPLEMENTATION
-#include <stb_image.h>
-#define STB_IMAGE_IM
-#endif
-
 Sprite::Sprite(std::string file)
 {
     glfwImage = new GLFWimage();

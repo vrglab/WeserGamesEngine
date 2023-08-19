@@ -21,17 +21,17 @@ AppSettings::AppSettings()
     SetSetting("Engine_ver", new Version(0, 0, 1, 0));
     SetSetting("Window_Icon", nullptr);
 
-    std::string* resourcepath = new std::string;
+    /*std::string* resourcepath = new std::string;
     resourcepath->append(Application::GetCurrentExeDirectory());
     resourcepath->append("\\");
     resourcepath->append("Internal\\Resources");
-    SetSetting("Inter_res_loc", resourcepath);
+    SetSetting("Inter_res_loc", resourcepath);*/
 
-    std::string* assetsepath = new std::string;
+    /*std::string* assetsepath = new std::string;
     assetsepath->append(Application::GetCurrentExeDirectory());
     assetsepath->append("\\");
     assetsepath->append("Assets");
-    SetSetting("Inter_res_loc", assetsepath);
+    SetSetting("Inter_res_loc", assetsepath);*/
 
     // Lock settings
     LockSetting("Inter_res_loc");
