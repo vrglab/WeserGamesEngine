@@ -1,5 +1,5 @@
 set(PROJECT_NAME "WeserGamesEngine")
-set(LIB_NAME "WeserGamesEngineLib)
+set(LIB_NAME "WeserGamesEngineLib")
 set(PROJECT_SRC_DIR "${CMAKE_SOURCE_DIR}/${PROJECT_NAME}")
 set(PROJECT_DLLS_DIR "${CMAKE_SOURCE_DIR}/DLL Files")
 set(PROJECT_LIB_DIR "${CMAKE_SOURCE_DIR}/Lib")
