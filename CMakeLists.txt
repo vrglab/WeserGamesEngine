@@ -1,5 +1,5 @@
 set(PROJECT_NAME "WeserGamesEngine")
-set(LIB_NAME "WeserGamesEngine")
+set(LIB_NAME "WeserGamesEngineLib)
 set(PROJECT_SRC_DIR "${CMAKE_SOURCE_DIR}/${PROJECT_NAME}")
 set(PROJECT_DLLS_DIR "${CMAKE_SOURCE_DIR}/DLL Files")
 set(PROJECT_LIB_DIR "${CMAKE_SOURCE_DIR}/Lib")
@@ -26,5 +26,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE ${LIB_FILES})
 
 file(GLOB DLL_FILES "${PROJECT_DLLS_DIR}/*.dll")
 target_link_libraries(${PROJECT_NAME} PRIVATE ${DLL_FILES})
+
+include(CMakeFilters.cmake)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME ${LIB_NAME})
