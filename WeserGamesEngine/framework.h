@@ -17,31 +17,31 @@
 
 //Engine Types
 #ifndef __VECTOR2__
-#include "Vector2.h"
+#include "T_Vector2.h"
 #endif
 
 #ifndef __VECTOR3__
-#include "Vector3.h"
+#include "T_Vector3.h"
 #endif
 
 #ifndef __MATRIX__
-#include "Matrix.h"
+#include "T_Matrix.h"
 #endif
 
 #ifndef __VERSION__
-#include "Version.h"
+#include "T_Version.h"
 #endif
 
 #ifndef __RESOURCE__
-#include "Resource.h"
+#include "T_Resource.h"
 #endif
 
 #ifndef __SPRITE__
-#include "Sprite.h"
+#include "T_Sprite.h"
 #endif
 
 #ifndef __MATERIAL__
-#include "Material.h"
+#include "T_Material.h"
 #endif
 
 
@@ -79,7 +79,7 @@
 #endif
 
 #ifndef __RESOLUTION__
-#include "Resolution.h"
+#include "T_Resolution.h"
 #endif
 
 #ifndef __WE_DISPLAY__

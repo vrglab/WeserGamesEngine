@@ -34,6 +34,10 @@ source_group("${SOURCE}/${CAT_APP}" FILES ${APP_SOURCES})
 file(GLOB MEM_SOURCES "${PROJECT_SRC_DIR}/*Memory*.cpp")
 source_group("${SOURCE}/${CAT_MEMMANG}" FILES ${MEM_SOURCES})
 
+
+file(GLOB TYP_SOURCES "${PROJECT_SRC_DIR}/T_*.cpp")
+source_group("${SOURCE}/${CAT_ENGTYPES}" FILES ${TYP_SOURCES})
+
 #Hand Writen
 source_group("${SOURCE}/${CAT_DEBUGING}" FILES "${PROJECT_SRC_DIR}/Console.cpp")
 
@@ -54,6 +58,10 @@ source_group("${HEADER}/${CAT_APP}" FILES ${APP_HEADERS})
 
 file(GLOB MEM_HEADER "${PROJECT_SRC_DIR}/*Memory*.h")
 source_group("${HEADER}/${CAT_MEMMANG}" FILES ${MEM_HEADER})
+
+file(GLOB TYP_HEADER "${PROJECT_SRC_DIR}/T_*.h")
+source_group("${HEADER}/${CAT_ENGTYPES}" FILES ${TYP_HEADER})
+
 
 #Hand written
 source_group("${HEADER}/${CAT_DEBUGING}" FILES "${PROJECT_SRC_DIR}/Console.h")
