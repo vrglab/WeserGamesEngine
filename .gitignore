@@ -371,3 +371,7 @@ FodyWeavers.xsd
 /ZERO_CHECK.vcxproj
 /ZERO_CHECK.vcxproj.filters
 /WeserGamesEngine.sln
+/WeserGamesEngine64.vcxproj
+/WeserGamesEngine64.vcxproj.filters
+/WeserGamesEngineLib.vcxproj
+/WeserGamesEngineLib.vcxproj.filters
