@@ -1,5 +1,5 @@
 #pragma once
-#include "pch.h"
+#include "WeserGamesEngine.h"
 
 #ifndef __WE_GLFWDISPLAY__
 #define __WE_GLFWDISPLAY__

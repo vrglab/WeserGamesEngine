@@ -1,5 +1,5 @@
 #pragma once
-#include "pch.h"
+#include "WeserGamesEngine.h"
 
 #ifndef __DIRECTXRENDERER__
 #define __DIRECTXRENDERER__

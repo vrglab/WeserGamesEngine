@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "WeserGamesEngine.h"
 
 Vector3::Vector3(float x, float y, float z) : x(new float(x)), y(new float(y)), z(new float(z))
 {

@@ -1,5 +1,5 @@
 #pragma once
-#include "pch.h"
+#include "WeserGamesEngine.h"
 
 #ifndef __VERSION__
 #define __VERSION__

@@ -1,5 +1,5 @@
 #pragma once
-#include "pch.h"
+#include "WeserGamesEngine.h"
 
 #ifndef __OPENGLRENDERER__
 #define __OPENGLRENDERER__

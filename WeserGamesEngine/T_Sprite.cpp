@@ -3,7 +3,7 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
 #endif
-#include "pch.h"
+#include "WeserGamesEngine.h"
 
 Sprite::Sprite(std::string file)
 {

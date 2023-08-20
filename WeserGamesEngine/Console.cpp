@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "WeserGamesEngine.h"
 
 std::string Console::GetPrefix(const std::string& prefixname)
 {

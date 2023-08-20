@@ -1,5 +1,5 @@
 #pragma once
-#include "pch.h"
+#include "WeserGamesEngine.h"
 
 #ifndef __VULKANRENDERER__
 #define __VULKANRENDERER__
